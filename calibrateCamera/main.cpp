@@ -114,8 +114,6 @@ int main(int argc, char **argv)
 
         // Detect markers
         detectMarkers(imgOriginal, dictionary, corners, ids, parameters, rejected);
-		
-		cout << rejected.size()  << endl;
 
         // Draw results if at least 1 marker has been detected
         imgOriginal.copyTo(imgOutput);
